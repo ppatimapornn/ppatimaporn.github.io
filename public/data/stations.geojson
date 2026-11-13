@@ -1,0 +1,567 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-11-13T07:26:21Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "node/280240577",
+      "properties": {
+        "@id": "node/280240577",
+        "name": "ลาดพร้าว",
+        "name:en": "Lat Phrao",
+        "name:th": "ลาดพร้าว",
+        "name:zh": "叻抛",
+        "operator": "ทางด่วนและรถไฟฟ้ากรุงเทพ",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "BL15",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q4923372"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5728701,
+          13.806503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/280240580",
+      "properties": {
+        "@id": "node/280240580",
+        "addr:country": "Thailand",
+        "addr:district": "จตุจักร",
+        "addr:district:en": "Chatuchak",
+        "addr:postcode": "10900",
+        "addr:province": "กรุงเทพมหานคร",
+        "addr:province:en": "Bangkok",
+        "addr:street": "ถนนลาดพร้าว",
+        "addr:street:en": "Ladprao road",
+        "addr:subdistrict": "จตุจักร",
+        "alt_name": "สถานีรถไฟพหลโยธิน",
+        "description": "สถานีรถไฟพหลโยธิน Phahon Yothin Station ฺBangkok",
+        "name": "พหลโยธิน",
+        "name:en": "Phahon Yothin",
+        "name:ja": "パホンヨーティン駅",
+        "name:th": "พหลโยธิน",
+        "name:zh": "帕凤裕庭",
+        "operator": "ทางด่วนและรถไฟฟ้ากรุงเทพ",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "BL14",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q4919752",
+        "wikipedia": "th:สถานีพหลโยธิน (รถไฟฟ้ามหานคร)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5614634,
+          13.8128808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/280240585",
+      "properties": {
+        "@id": "node/280240585",
+        "name": "สวนจตุจักร",
+        "name:en": "Chatuchak Park",
+        "name:th": "สวนจตุจักร",
+        "name:zh": "乍都节公园",
+        "network": "MRT",
+        "operator": "ทางด่วนและรถไฟฟ้ากรุงเทพ",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "BL13",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q6633742"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5532845,
+          13.8029643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/280240589",
+      "properties": {
+        "@id": "node/280240589",
+        "name": "กำแพงเพชร",
+        "name:en": "Kamphaeng Phet",
+        "name:th": "กำแพงเพชร",
+        "name:zh": "甘烹碧车站",
+        "operator": "ทางด่วนและรถไฟฟ้ากรุงเทพ",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "BL12",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q13590884"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5478837,
+          13.7979484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2107224382",
+      "properties": {
+        "@id": "node/2107224382",
+        "amenity": "bus_station",
+        "building": "train_station",
+        "bus": "yes",
+        "designation": "ทางออกประตูสวนจตุจักร",
+        "name": "รถไฟฟ้าใต้ดิน สถานีกำเเพงเพชร",
+        "name:en": "Phet Kamphaeng MRT",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5486834,
+          13.7981268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5388599065",
+      "properties": {
+        "@id": "node/5388599065",
+        "addr:country": "ไทย",
+        "addr:district": "จตุจักร",
+        "addr:postcode": "10900",
+        "addr:province": "กรุงเทพมหานคร",
+        "addr:province:en": "Bangkok",
+        "addr:street": "ถนนพหลโยธิน",
+        "country": "ไทย",
+        "name": "หมอชิต",
+        "name:en": "Mo Chit",
+        "name:ja": "モーチット",
+        "name:th": "หมอชิต",
+        "operator": "ระบบขนส่งมวลชนกรุงเทพ",
+        "operator:en": "Bangkok Mass Transit System;BTSC",
+        "province": "กรุงเทพ;กรุงเทพมหานคร",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "N8",
+        "station": "subway",
+        "subway": "yes",
+        "toilets:wheelchair": "no",
+        "website": "https://www.bts.co.th/eng/service/areamap.html",
+        "wheelchair": "limited",
+        "wheelchair:description": "Mochit Station This station has elevator near the stairs.",
+        "wikidata": "Q873641"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5537913,
+          13.8025991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6681609025",
+      "properties": {
+        "@id": "node/6681609025",
+        "name": "บางบัว",
+        "name:en": "Bang Bua",
+        "name:th": "บางบัว",
+        "operator": "กรุงเทพธนาคม",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "N15",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q96075530"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5851786,
+          13.856049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6681609026",
+      "properties": {
+        "@id": "node/6681609026",
+        "name": "กรมป่าไม้",
+        "name:en": "Royal Forest Department",
+        "name:ja": "ロイヤルフォレストデパートメント駅",
+        "name:th": "กรมป่าไม้",
+        "network": "BTS",
+        "operator": "กรุงเทพธนาคม",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "N14",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q96096835"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5818158,
+          13.850326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6681609027",
+      "properties": {
+        "@id": "node/6681609027",
+        "name": "มหาวิทยาลัยเกษตรศาสตร์",
+        "name:en": "Kasetsart University",
+        "name:ja": "カセサート大学駅",
+        "network": "BTS",
+        "operator": "กรุงเทพธนาคม",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "N13",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q76973081"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.577105,
+          13.8423141
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6681609028",
+      "properties": {
+        "@id": "node/6681609028",
+        "name": "เสนานิคม",
+        "name:en": "Sena Nikhom",
+        "name:ja": "セナニコム駅",
+        "name:th": "เสนานิคม",
+        "operator": "กรุงเทพธนาคม",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "N12",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q76973119"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5736286,
+          13.8364057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6681609029",
+      "properties": {
+        "@id": "node/6681609029",
+        "name": "รัชโยธิน",
+        "name:en": "Ratchayothin",
+        "name:ja": "ラチャヨーティン駅",
+        "name:th": "รัชโยธิน",
+        "network": "BTS",
+        "operator": "กรุงเทพธนาคม",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "N11",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q76972519"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5697222,
+          13.8297477
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6681609030",
+      "properties": {
+        "@id": "node/6681609030",
+        "name": "พหลโยธิน 24",
+        "name:en": "Phahonyothin 24",
+        "name:ja": "パホンヨーティン24駅",
+        "name:th": "พหลโยธิน 24",
+        "network": "BTS",
+        "operator": "กรุงเทพธนาคม",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "N10",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q13021643"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5664253,
+          13.8241206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6966466946",
+      "properties": {
+        "@id": "node/6966466946",
+        "alt_name": "Ladphrao Intersection;BTS ห้าแยก ลาดพร้าว",
+        "name": "ห้าแยกลาดพร้าว",
+        "name:en": "Ha Yaek Lat Phrao",
+        "name:ja": "ハーイェークラプラオ駅",
+        "operator": "กรุงเทพธนาคม",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "N9",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q16307668"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5620359,
+          13.8166807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7787093471",
+      "properties": {
+        "@id": "node/7787093471",
+        "name": "จตุจักร",
+        "name:en": "Chatuchak",
+        "name:th": "จตุจักร",
+        "network": "รถไฟฟ้าชานเมือง สายสีแดง",
+        "network:en": "SRT Red Lines",
+        "network:th": "รถไฟฟ้าชานเมือง สายสีแดง",
+        "network:wikidata": "Q2542280",
+        "operator": "การรถไฟแห่งประเทศไทย",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "RN02",
+        "ref": "RN02",
+        "train": "yes",
+        "wikidata": "Q108596671",
+        "wikipedia": "th:สถานีจตุจักร"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5494741,
+          13.8266181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7787093472",
+      "properties": {
+        "@id": "node/7787093472",
+        "name": "วัดเสมียนนารี",
+        "name:en": "Wat Samian Nari",
+        "name:th": "วัดเสมียนนารี",
+        "network": "รถไฟฟ้าชานเมือง สายสีแดง",
+        "network:en": "SRT Red Lines",
+        "network:th": "รถไฟฟ้าชานเมือง สายสีแดง",
+        "network:wikidata": "Q2542280",
+        "operator": "การรถไฟแห่งประเทศไทย",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "RN03",
+        "ref": "RN03",
+        "train": "yes",
+        "wikidata": "Q108596711",
+        "wikipedia": "th:สถานีวัดเสมียนนารี"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5574987,
+          13.8415934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7787093474",
+      "properties": {
+        "@id": "node/7787093474",
+        "name": "บางเขน",
+        "name:en": "Bang Khen",
+        "name:th": "บางเขน",
+        "network": "รถไฟฟ้าชานเมือง สายสีแดง",
+        "network:en": "SRT Red Lines",
+        "network:th": "รถไฟฟ้าชานเมือง สายสีแดง",
+        "network:wikidata": "Q2542280",
+        "operator": "การรถไฟแห่งประเทศไทย",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "RN04",
+        "ref": "RN04",
+        "train": "yes",
+        "wikidata": "Q6633329",
+        "wikipedia": "th:สถานีบางเขน"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5616724,
+          13.8493659
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8717933838",
+      "properties": {
+        "@id": "node/8717933838",
+        "monorail": "yes",
+        "name": "ลาดพร้าว",
+        "name:en": "Lat Phrao",
+        "name:th": "ลาดพร้าว",
+        "name:zh": "叻抛",
+        "operator": "อีสเทิร์นบางกอกโมโนเรล",
+        "operator:en": "Eastern Bangkok Monorail",
+        "operator:th": "อีสเทิร์นบางกอกโมโนเรล",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "YL01",
+        "station": "monorail",
+        "wheelchair": "yes",
+        "wikidata": "Q4923372",
+        "wikipedia": "th:สถานีลาดพร้าว"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5747847,
+          13.8069826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8986366369",
+      "properties": {
+        "@id": "node/8986366369",
+        "addr:city": "แขวงจตุจักร",
+        "addr:district": "จตุจักร",
+        "addr:housenumber": "336",
+        "addr:postcode": "10900",
+        "addr:province": "กรุงเทพมหานคร",
+        "addr:street": "ถนนเทอดดำริ",
+        "addr:subdistrict": "จตุจักร",
+        "alt_name": "สถานีกลางบางซื่อ",
+        "alt_name:en": "Bang Sue Grand Station",
+        "alt_name:th": "สถานีกลางบางซื่อ",
+        "name": "กรุงเทพอภิวัฒน์",
+        "name:en": "Krung Thep Aphiwat",
+        "name:ka": "クルンテープ・アピワット",
+        "name:ko": "끄룽텝 아피왓 중앙역",
+        "name:th": "กรุงเทพอภิวัฒน์",
+        "name:zh": "邦似中央车站",
+        "network": "การรถไฟแห่งประเทศไทย",
+        "network:en": "State Railway of Thailand",
+        "network:th": "การรถไฟแห่งประเทศไทย",
+        "network:wikidata": "Q2165702",
+        "official_name": "สถานีกลางกรุงเทพอภิวัฒน์",
+        "official_name:en": "Krung Thep Aphiwat Central Terminal",
+        "official_name:th": "สถานีกลางกรุงเทพอภิวัฒน์",
+        "operator": "การรถไฟแห่งประเทศไทย",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "กภ",
+        "railway:station_category": "1",
+        "ref": "กภ.",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q23925684",
+        "wikipedia": "th:สถานีกลางกรุงเทพอภิวัฒน์"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5417111,
+          13.8040313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9452011776",
+      "properties": {
+        "@id": "node/9452011776",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "อู่กำแพงเพชร",
+        "name:en": "Kamphaeng Phet Bus Depot",
+        "name:th": "กลุ่มปฏิบัติการเดินรถที่ 1 เขตการเดินรถที่ 8 (อู่กำแพงเพชร)",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5407927,
+          13.8001935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12803915082",
+      "properties": {
+        "@id": "node/12803915082",
+        "name": "บางซื่อ",
+        "name:en": "Bang Sue",
+        "name:th": "บางซื่อ",
+        "name:zh": "挽赐站",
+        "operator": "ทางด่วนและรถไฟฟ้ากรุงเทพ",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "BL11",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q4384431"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5410464,
+          13.8023925
+        ]
+      }
+    }
+  ]
+}

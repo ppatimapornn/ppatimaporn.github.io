@@ -1,0 +1,55 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-11-11T07:49:20Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "relation/1639286",
+      "properties": {
+        "@id": "relation/1639286",
+        "admin_level": "6",
+        "boundary": "administrative",
+        "name": "เขตจตุจักร",
+        "name:en": "Chatuchak District",
+        "name:th": "เขตจตุจักร",
+        "name:th-Latn": "Khet Chatuchak",
+        "population": "158130",
+        "postal_code": "10900",
+        "short_name": "จตุจักร",
+        "source:population": "Department of Provincial Administration",
+        "type": "boundary",
+        "wikidata": "Q1019658",
+        "@geometry": "bounds"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              100.5371218,
+              13.7945626
+            ],
+            [
+              100.5910609,
+              13.7945626
+            ],
+            [
+              100.5910609,
+              13.8588892
+            ],
+            [
+              100.5371218,
+              13.8588892
+            ],
+            [
+              100.5371218,
+              13.7945626
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
