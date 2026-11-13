@@ -1,65 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatuchak 3D City</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatuchak 3D City Simulation</title>
     <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-            font-family: Arial, sans-serif;
-        }
+      body { margin: 0; overflow: hidden; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+      #buildingInfo {
+        position: absolute; top: 20px; left: 20px;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 20px; border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        display: none; min-width: 250px; pointer-events: auto;
+      }
+      #buildingInfo h3 { margin: 0 0 10px 0; color: #333; }
+      #buildingInfo p { margin: 5px 0; color: #555; font-size: 14px; }
+      #closeBuildingInfo {
+        margin-top: 15px; padding: 8px 15px;
+        background: #e74c3c; color: white;
+        border: none; border-radius: 6px; cursor: pointer; width: 100%;
+      }
+      
+      #simulationControls {
+        position: absolute; top: 20px; right: 20px;
+        background: rgba(30, 41, 59, 0.95);
+        padding: 15px; border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        display: flex; flex-direction: column; gap: 8px; width: 230px;
+        pointer-events: auto;
+      }
+      #simulationControls h3 { margin: 0; color: #f8fafc; font-size: 16px; text-align: center; }
+      #activeToolText { margin: 4px 0 8px 0; color: #cbd5e1; font-size: 12px; text-align: center; }
+      
+      .size-control {
+        background: rgba(15, 23, 42, 0.6);
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 4px;
+      }
+      .size-control label {
+        display: flex;
+        justify-content: space-between;
+        color: #f8fafc;
+        font-size: 13px;
+        margin-bottom: 6px;
+      }
+      .size-control input[type="range"] {
+        width: 100%;
+        cursor: pointer;
+        accent-color: #fbbf24;
+      }
 
-        #title {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            color: white;
-            background: #1e293b;
-            padding: 15px 20px;
-            border-radius: 10px;
-            z-index: 1;
-        }
+      .sim-btn {
+        padding: 10px; border: 2px solid transparent; border-radius: 6px;
+        font-weight: bold; cursor: pointer; transition: 0.2s;
+      }
+      .sim-btn.active { border-color: #fbbf24; transform: scale(1.03); }
+      .btn-flood { background: #3b82f6; color: white; }
+      .btn-accident { background: #ef4444; color: white; }
+      .btn-weather { background: #64748b; color: white; }
+      .btn-power { background: #0f172a; color: #e2e8f0; border: 1px solid #334155; }
+      .btn-reset { background: #10b981; color: white; margin-top: 5px; }
+      .sim-btn:hover { opacity: 0.9; }
+
+      body.placing-mode canvas { cursor: crosshair !important; }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <div id="buildingInfo">
+      <h3>ข้อมูลอาคาร</h3>
+      <p id="buildingName"></p>
+      <p id="buildingType"></p>
+      <p id="buildingLevels"></p>
+      <p id="buildingHeight"></p>
+      <button id="closeBuildingInfo">ปิด</button>
+    </div>
 
-    <div id="title">
-        <h2>CHATUCHAK 3D CITY</h2>
-        <p>3D City Model Prototype</p>
+    <div id="simulationControls">
+      <h3>วางเหตุการณ์จำลอง</h3>
+      <p id="activeToolText">เลือกปุ่มแล้วคลิกบนแผนที่</p>
+
+      <div class="size-control">
+        <label for="zoneRadiusSlider">
+          <span>ขนาดรัศมีพื้นที่:</span>
+          <span id="radiusValueText">100 ม.</span>
+        </label>
+        <input type="range" id="zoneRadiusSlider" min="30" max="300" step="10" value="100" />
+      </div>
+
+      <button id="btn-flood" class="sim-btn btn-flood" data-tool="flood">🌊 สร้างจุดน้ำท่วม</button>
+      <button id="btn-accident" class="sim-btn btn-accident" data-tool="accident">💥 สร้างจุดอุบัติเหตุ</button>
+      <button id="btn-weather" class="sim-btn btn-weather" data-tool="weather">⛈️ สร้างพายุฝนเฉพาะจุด</button>
+      <button id="btn-power" class="sim-btn btn-power" data-tool="power">⚡ สร้างจุดไฟดับ</button>
+      <button id="btn-reset" class="sim-btn btn-reset">✅ ล้างเหตุการณ์ทั้งหมด</button>
     </div>
 
     <script type="module" src="./main.js"></script>
-<div id="buildingInfo" style="
-  display: none;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 260px;
-  padding: 16px;
-  background: white;
-  color: #222;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
-  font-family: Arial, sans-serif;
-  z-index: 1000;
-">
-  <button id="closeBuildingInfo" style="
-    float: right;
-    border: none;
-    background: #eee;
-    padding: 5px 9px;
-    border-radius: 5px;
-    cursor: pointer;
-  ">ปิด</button>
-
-  <h3>ข้อมูลอาคาร</h3>
-  <p id="buildingName"></p>
-  <p id="buildingType"></p>
-  <p id="buildingLevels"></p>
-  <p id="buildingHeight"></p>
-</div>
-</body>
+  </body>
 </html>
